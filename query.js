@@ -29,8 +29,6 @@ function query(keyword, browser) {
         }
     }
     
-    console.log(Object.keys(data.data));
-    
     if (typeof browser === 'string' &&
         data.data[keyword] && data.data[keyword].stats[browser]) {
         var maxVersion = '0.0';
