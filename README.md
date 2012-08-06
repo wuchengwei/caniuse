@@ -50,5 +50,11 @@ if (result === 'y' || result === 'y x') {
 }
 ```
 
+You may want to update the data from caniuse:
+```sh
+cd tool
+node updateData.js
+```
+
 ### Related Projects
 Fyrd's caniuse: https://github.com/Fyrd/caniuse
