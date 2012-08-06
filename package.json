@@ -1,13 +1,13 @@
 {
     "name": "caniuse",
     "version": "0.1.0",
-    "description": "Compatibility tables for support of HTML5, CSS3, SVG and more in desktop and mobile browsers.",
+    "description": "Compatibility validation for support of HTML5, CSS3, SVG and more in desktop and mobile browsers.",
     "keywords": ["css3", "html5", "svg", "browser"],
     "author": "Chengwei Wu <meegodevelop@gmail.com>",
     "repository":{
         "type": "git",
         "url": "https://github.com/wuchengwei/caniuse.git"
     },
-    "main": "./query.js",
+    "main": "./lib/query.js",
     "engines": { "node": ">= 0.4.0" }
 }
