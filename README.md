@@ -56,5 +56,16 @@ cd tool
 node updateData.js
 ```
 
+You can also update data in code:
+```js
+var updateData = require('caniuse').updateData;
+updateData(function(err) {
+    if (err) {
+        throw err;
+    }
+    // do some query
+});
+```
+
 ### Related Projects
 Fyrd's caniuse: https://github.com/Fyrd/caniuse
