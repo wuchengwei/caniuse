@@ -3,6 +3,9 @@
 A node library to do compatibility validation for support of HTML5, CSS3, SVG and more in desktop and mobile browsers.
 Based on [data from Fyrd's caniuse](https://github.com/Fyrd/caniuse).
 
+### Installing
+    npm install caniuse
+
 ### Usage
 
 Check if CSS 3D transform is supported on android 2.3:
