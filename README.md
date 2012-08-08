@@ -16,24 +16,17 @@ var query = require('caniuse').query
 
 result = query('transforms3d', {name:'android', version: '2.3'});
 
-switch(result) {
-case 'y':
-    console.log('Supported.');
-    break;
-case 'y x':
-    console.log('Supported, and vendor prefixed.');
-    break;
-case 'a':
-    console.log('Partially supported.');
-    break;
-case 'a x':
-    console.log('Partially supported, and vendor prefixed.');
-    break;
-case 'u':
-    console.log('Unknown.');
-    break;
-default:
-    console.log('NOT supported.');
+// query result:
+// -2 : NOT supported
+// -1 : NOT supported, but has polyfill available
+//  0 : unknown
+//  1 : partially supported, and vendor prefixed
+//  2 : partially supported
+//  3 : supported, and vendor prefixed
+//  4 : supported
+
+if (result > 2) {
+    console.log('Fully supported!');
 }
 ```
 
@@ -45,7 +38,7 @@ var query = require('caniuse').query
 
 result = query('fontface', 'ie');
 
-if (result === 'y' || result === 'y x') {
+if (result > 2) {
     console.log('Fully Supported!');
 }
 ```
