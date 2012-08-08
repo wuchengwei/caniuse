@@ -1,6 +1,6 @@
 {
     "name": "caniuse",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Compatibility validation for support of HTML5, CSS3, SVG and more in desktop and mobile browsers.",
     "keywords": ["css3", "html5", "svg", "browser"],
     "author": "Chengwei Wu <meegodevelop@gmail.com>",
