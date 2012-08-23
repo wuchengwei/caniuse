@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/wuchengwei/caniuse.png)](http://travis-ci.org/wuchengwei/caniuse)
 # node-caniuse
 
 A node library to do compatibility validation for support of HTML5, CSS3, SVG and more in desktop and mobile browsers.
