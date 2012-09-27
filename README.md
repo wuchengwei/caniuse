@@ -11,7 +11,7 @@ Based on [data from Fyrd's caniuse](https://github.com/Fyrd/caniuse).
 Check if CSS 3D transform is supported on android 2.3:
 
 ```js
-var query = require('caniuse').query
+var query = require('caniuse').query,
     result;
 
 result = query('transforms3d', {name:'android', version: '2.3'});
@@ -33,7 +33,7 @@ if (result > 2) {
 Check if @font-face is supported on latest version of IE:
 
 ```js
-var query = require('caniuse').query
+var query = require('caniuse').query,
     result;
 
 result = query('fontface', 'ie');
